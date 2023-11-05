@@ -14,9 +14,9 @@ Vom folosi i-node-uri, lista de i-node-uri, blocuri de date, bitmap-uri.
 Tabela de i-noduri ale fisierelor va fi populata la momentul montarii sistemului de fisiere.Atunci cand se doreste crearaea unui nou fisier, se alege primul bloc disponibil din blocul de date pe baza bitmap-ului creat pentru a tine evidenta disponibilitatii blocurilor.
 Atunci cand un fisier este eliminat, acest lucru se va observa si in blocurile destinate listei de i-noduri si bitmap-ului ce face referire la gradul de ocupare al blocurilor de date din sistem.
 ## Operatiile folosite in FUSE
-..* Crearea unui fisier/director
-..* Stergerea unui fisier/director
-..* Vizualizarea datelor despre un fisier/director
-..* Posibilitatea de a naviga prin directoarele sistemului de fisiere
-..* Redenumirea unui fisier/director
-..* Persistenta sistemului de fisiere dupa demontare
+1 Crearea unui fisier/director
+.1 Stergerea unui fisier/director
+..1 Vizualizarea datelor despre un fisier/director
+...1 Posibilitatea de a naviga prin directoarele sistemului de fisiere
+....1 Redenumirea unui fisier/director
+.....1 Persistenta sistemului de fisiere dupa demontare
