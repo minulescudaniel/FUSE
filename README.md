@@ -18,6 +18,7 @@ Atunci cand un fisier este eliminat, acest lucru se va observa si in blocurile d
 * Stergerea unui fisier/director
 * Vizualizarea datelor despre un fisier/director
 * Posibilitatea de a naviga prin directoarele sistemului de fisiere
+* Functionalitatea de modificare a permisiunilor unui fisier
 * Redenumirea unui fisier/director
 * Persistenta sistemului de fisiere dupa demontare
 * Functionalitate de afisare a atributelor unui fisier
