@@ -22,3 +22,6 @@ Atunci cand un fisier este eliminat, acest lucru se va observa si in blocurile d
 * Redenumirea unui fisier/director
 * Persistenta sistemului de fisiere dupa demontare
 * Functionalitate de afisare a atributelor unui fisier
+
+  #Bibliografie
+  `https://www.maastaar.net/fuse/linux/filesystem/c/2019/09/28/writing-less-simple-yet-stupid-filesystem-using-FUSE-in-C/`
