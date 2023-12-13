@@ -23,7 +23,7 @@ Atunci cand un fisier este eliminat, acest lucru se va observa si in blocurile d
 * Persistenta sistemului de fisiere dupa demontare
 * Functionalitate de afisare a atributelor unui fisier
 
-##IMPORTANT!!!
+# IMPORTANT!!!
 Se pot observa posibilele erori ce pot aparea pe parcursul rularii programului, utlizand optiunea "-d", in optiunile montarii.
 
 
