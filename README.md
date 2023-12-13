@@ -23,7 +23,11 @@ Atunci cand un fisier este eliminat, acest lucru se va observa si in blocurile d
 * Persistenta sistemului de fisiere dupa demontare
 * Functionalitate de afisare a atributelor unui fisier
 
-  # Bibliografie
+#IMPORTANT!!!
+Se pot observa posibilele erori ce pot aparea pe parcursul rularii programului, utlizand optiunea "-d", in optiunile montarii.
+
+
+# Bibliografie
   `https://www.maastaar.net/fuse/linux/filesystem/c/2019/09/28/writing-less-simple-yet-stupid-filesystem-using-FUSE-in-C/`
   `https://www.cs.hmc.edu/~geoff/classes/hmc.cs135.201001/homework/fuse/fuse_doc.html`
   `https://libfuse.github.io/doxygen/structfuse__operations.html`
