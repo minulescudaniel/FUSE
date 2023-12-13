@@ -31,3 +31,4 @@ Se pot observa posibilele erori ce pot aparea pe parcursul rularii programului, 
   `https://www.maastaar.net/fuse/linux/filesystem/c/2019/09/28/writing-less-simple-yet-stupid-filesystem-using-FUSE-in-C/`
   `https://www.cs.hmc.edu/~geoff/classes/hmc.cs135.201001/homework/fuse/fuse_doc.html`
   `https://libfuse.github.io/doxygen/structfuse__operations.html`
+  `https://stackoverflow.com/`
