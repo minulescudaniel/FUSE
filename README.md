@@ -7,7 +7,7 @@
        Astfel, Linux apare ca o interfata cu utilozatorul, fara a avea vreun efect asupra modului in care user-ul si-a construit ierarhia de directoare.
        Ne-am gandit sa folosim urmatoarea structura:
 
-* struct file{
+## struct file{
 * int inode;
 *  mode_t permissions;
 * char*path;
@@ -19,7 +19,7 @@
 *    int size;
 *};   
 
-* struct directory{
+## struct directory{
 * 	int inode;
 * 	char*path;
 * 	int gid;
