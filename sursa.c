@@ -768,13 +768,6 @@ void create_instance(char*buf,char type)
         parent_directory->list_files[parent_directory->number_of_files_current_folder]=rfile;
         parent_directory->number_of_files_current_folder++;
        }
-
-
-
-
-
-
-
 }
 
 void reconstruct()
@@ -804,8 +797,7 @@ void reconstruct()
     pointer2=strtok(NULL,"\n");
    }
    close(fdf);
-   
-     
+        
 }
 
 
@@ -821,23 +813,19 @@ void *do_init(struct fuse_conn_info *conn, struct fuse_config *cfg)
     current_directory->mtime = time(NULL);
     current_directory->accest = time(NULL);
     current_directory->nlinks=2;
-    current_directory->inode=0;
-    
-    
-     char*searched=strdup("/");
-     strcat(searched,": ");
-     int fd1=open("Atribute_directoare.txt",O_RDONLY | O_CREAT, S_IRUSR | S_IWUSR);
-     char*buffer1=(char*)malloc(4096);
-     read(fd1,buffer1,4096);
-     close(fd1);
-     if(strstr(buffer1,searched)==NULL)
+    current_directory->inode=0; 
+    char*searched=strdup("/");
+    strcat(searched,": ");
+    int fd1=open("Atribute_directoare.txt",O_RDONLY | O_CREAT, S_IRUSR | S_IWUSR);
+    char*buffer1=(char*)malloc(4096);
+    read(fd1,buffer1,4096);
+    close(fd1);
+    if(strstr(buffer1,searched)==NULL)
     {
     char*information=create_buffer_information("/",current_directory->permissions,current_directory->inode,0,current_directory->nlinks,current_directory->gid,current_directory->uid,current_directory->accest,current_directory->mtime,'d');
     strcat(information,"\n");
     add_information_atribute_structuri(information,'d');
     }
-
-
     int fd=open("Inode.txt",O_RDWR|O_CREAT,S_IRUSR | S_IWUSR);
     char*buffer=(char*)malloc(10);
     read(fd,buffer,5);
@@ -845,8 +833,6 @@ void *do_init(struct fuse_conn_info *conn, struct fuse_config *cfg)
     close(fd);
     if(inode==0)
     inode++;
-    
-
     reconstruct();
     return NULL;
 }
@@ -880,15 +866,12 @@ static int do_unlink(const char *path) {
                 char*searched=strdup(path);
                 strcat(searched,": ");
                 char*p=strtok(buffer,"\n");
-                while(p){
-                   
-                   
+                while(p){       
                     if(!strstr(p,searched))
                     {
                         strcpy(information[line],p);
                         line++;
                     }
-                    
                     p=strtok(NULL,"\n");
                 }
                 close(fd);
@@ -916,13 +899,8 @@ static int do_unlink(const char *path) {
             }
         }
         
-    }
-
-    
+    }    
 }
-
-
-
 
 static int do_rmdir(const char *path) {
     path++;
@@ -1037,7 +1015,6 @@ static int do_rename(const char *old_path, const char *new_path) {
 }
 
 
-
 static int do_chmod(const char *path, mode_t mode) {
     if(path[0]=='/')
     path++;
@@ -1074,7 +1051,6 @@ static int do_open(const char *path, struct fuse_file_info *fi) {
 }
 
 
-
 static int do_read(const char *path, char *buf, size_t size, off_t offset, struct fuse_file_info *fi) {
     path++;
 
@@ -1105,9 +1081,6 @@ static int do_read(const char *path, char *buf, size_t size, off_t offset, struc
         return -ENOENT;
     }
 }
-
-
-    
 
 static int do_write(const char *path, const char *buf, size_t size, off_t offset, struct fuse_file_info *fi) {
     path++;
@@ -1301,8 +1274,7 @@ static int do_link(const char *old_path, const char *new_path) {
                     new_link->size = old_dir->list_files[i]->size;
                     new_link->gid = old_dir->list_files[i]->gid;
                     new_link->uid = old_dir->list_files[i]->uid;
-                    new_link->permissions = old_dir->list_files[i]->permissions;
-                   
+                    new_link->permissions = old_dir->list_files[i]->permissions;                   
                     new_link->inode = inode;
                     inode++;
                     new_link->content = old_dir->list_files[i]->content;
