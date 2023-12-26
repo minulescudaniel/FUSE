@@ -38,8 +38,8 @@
    Astfel, putem "simula" ierarhia folderelor si a fisierelor. Operatiile pe care le efectuam asupra structurilor de date , respectiv file si directory , sunt descrise in functiile prezente in sursa.c.
 
 ## Cum s-a realizat persistenata atat a fisierelor si a directoarelor create de utilzator, cat si a modificarilor ulterioare?
-   *Dupa ce am pus bazele logicii sistemului de fisiere si directoare, impreuna cu functiile necesare, am observat faptul ca datele se pierd o data cu demontarea sistemului de fisiere.
-   *Persistenta sistemului se bazeaza pa 3 fisiere text( _Atribute_fisiere.txt_ , _Atribute_directoare.txt_ , _Inode.txt_), si un director (_/home/alex/Desktop/Memory/_).
+*Dupa ce am pus bazele logicii sistemului de fisiere si directoare, impreuna cu functiile necesare, am observat faptul ca datele se pierd o data cu demontarea sistemului de fisiere.
+*Persistenta sistemului se bazeaza pa 3 fisiere text( _Atribute_fisiere.txt_ , _Atribute_directoare.txt_ , _Inode.txt_), si un director (_/home/alex/Desktop/Memory/_).
 
 * **Atribute_fisiere.txt si Atribute_directoare.txt**
   * Aceste 2 fisiere au rolul de a retine informatiile despre fisierele si directoarele sistemului.( **Atat pe cele nou create cat si pe cele deja create**)
