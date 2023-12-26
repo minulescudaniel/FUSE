@@ -28,7 +28,7 @@
 * 	int uid;
 * 	struct file*list_files[264];
 * 	int number_of_directories_current_folder;
-*     int number_of_files_current_folder;
+*   int number_of_files_current_folder;
 * 	struct directory*list_directories[264];
 * 	mode_t permissions;
 * 	time_t accest;
