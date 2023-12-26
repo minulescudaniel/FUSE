@@ -39,13 +39,12 @@
  Dupa ce am pus bazele logicii sistemului n de fisiere si directoare, impreuna cu functiile necesare, am observat faptul ca datele se pierd o data cu demontarea sistemului de fisiere.
  Persistenat sistemului nostru de fisiere se bazeaza pa 3 fisiere text( _Atribute_fisiere.txt_ , _Atribute_directoare.txt_ , _Inode.txt_), si un director (_/home/alex/Memory/_).
 
-* Atribute_fisiere.txt si Atribute_directoare.txt
- Aceste 2 fisiere au rolul de a retine informatiile despre fisierele si directoarele sistemului.( **Atat pe cele nou create cat si pe cele deja create**)
- **Am ales sa lucram cu 2 fisiere diferite, deoarece este mai usor de gestionat posibilele erori ce pot aparea pe parcurs si de diferentiat  directoarele si fiserele!!!**
+* **Atribute_fisiere.txt si Atribute_directoare.txt**->
+  * Aceste 2 fisiere au rolul de a retine informatiile despre fisierele si directoarele sistemului.( **Atat pe cele nou create cat si pe cele deja create**)
+  * **Am ales sa lucram cu 2 fisiere diferite, deoarece este mai usor de gestionat posibilele erori ce pot aparea pe parcurs si de diferentiat  directoarele si fiserele!!!**
 
 
- * Inode.txt
- Este utilizat cu scopul de a tine evidenta inode-ului la nivelul sistemului.
+ * **Inode.txt**->Este utilizat cu scopul de a tine evidenta inode-ului la nivelul sistemului.
 
 ## Operatiile folosite in FUSE
 * Crearea unui fisier/director
