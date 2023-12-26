@@ -6,31 +6,31 @@
     Sistemul de fisiere bazat pe API-ul FUSE ii permite utilizatorului sa aibe control total asupra structurii de foldere si fisiere. Astfel, Linux apare ca o interfata cu utilozatorul, fara a avea vreun  efect asupra modului in care user-ul si-a construit ierarhia de directoare.
     Ne-am gandit sa folosim urmatoarea structura:
 
-struct file{
-	int inode;
-	mode_t permissions;
-	char*path;
-	int gid;
-	int uid;
-	char content[1024];
-	time_t accest;
-	time_t mtime;
-    int size;
-};
+## struct file{
+## int inode;
+## 	mode_t permissions;
+## 	char*path;
+## 	int gid;
+## 	int uid;
+## 	char*content;
+## 	time_t accest;
+## 	time_t mtime;
+##    int size;
+##};
 
-struct directory{
-	int inode;
-	char*path;
-	int gid;
-	int uid;
-	struct file*list_files[264];
-	int number_of_directories_current_folder;
-  int number_of_files_current_folder;
-	struct directory*list_directories[264];
-	mode_t permissions;
-	time_t accest;
-	time_t mtime;
-};
+## struct directory{
+## 	int inode;
+## 	char*path;
+## 	int gid;
+## 	int uid;
+## 	struct file*list_files[264];
+## 	int number_of_directories_current_folder;
+##      int number_of_files_current_folder;
+## 	struct directory*list_directories[264];
+## 	mode_t permissions;
+## 	time_t accest;
+## 	time_t mtime;
+## };
 
   Astfel, putem "simula" ierarhia folderelor si a fisierelor. Operatiile pe care le efectuam asupra structurilor de date , respectiv file si directory , sun descrise in functiile prezente in sursa.c.
 
