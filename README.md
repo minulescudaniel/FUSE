@@ -64,7 +64,7 @@
 
 * **void reconstruct()**
   * Aceasta functie sta la baza persistentei sistemului de fisiere. Este apelata la montarea sistemului de fisiere, in functia *do_init()*.
-  * Prin intermediul ei se reconstruiesc mai intai directoarele, apoi fisierele sistemului. Aici intervine functia ***void create_instance(char* buff, char type)***, care _parseaza_ informatiile din liniile din fisiere si le utilieaza in vederea crearii unui fisier sau unui director. 
+  * Prin intermediul ei se reconstruiesc mai intai directoarele, apoi fisierele sistemului. Aici intervine functia ***void create_instance(char* buff, char type)**, care _parseaza_ informatiile din liniile din fisiere si le utilieaza in vederea crearii unui fisier sau unui director. 
   
  
 ## Operatiile folosite in FUSE
