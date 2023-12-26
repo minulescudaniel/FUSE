@@ -35,7 +35,7 @@
 * 	time_t mtime;
 ## };
 
-   *Astfel, putem "simula" ierarhia folderelor si a fisierelor. Operatiile pe care le efectuam asupra structurilor de date , respectiv file si directory , sunt descrise in functiile prezente in sursa.c.
+   Astfel, putem "simula" ierarhia folderelor si a fisierelor. Operatiile pe care le efectuam asupra structurilor de date , respectiv file si directory , sunt descrise in functiile prezente in sursa.c.
 
 ## Cum s-a realizat persistenata atat a fisierelor si a directoarelor create de utilzator, cat si a modificarilor ulterioare?
    *Dupa ce am pus bazele logicii sistemului de fisiere si directoare, impreuna cu functiile necesare, am observat faptul ca datele se pierd o data cu demontarea sistemului de fisiere.
