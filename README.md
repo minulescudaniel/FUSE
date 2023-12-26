@@ -51,9 +51,9 @@
    * Este utilizat cu scopul de a tine evidenta inode-urilor la nivelul sistemului. Atfel, putem obtine unicitatea acestora. Acest lucru este util atunci cand dorim persistenta continutului fisierelor.
    * De fiecare data cand se scrie un anumit continut intr-un fisier, acesta se salveaza automat intr-un fisier cu calea: **/home/alex/Desktop/Memory/ValoareInode.txt**
    * **Valoarea pe care o contine este actualizat de fiecare data cand este creat un nou fisier sau director.**
+     
+## Functii folosite pentru gestionarea modificarilor datelor utilizate in vederea constituirii persistentei sistemului de fisiere.
    * 
-## Functii folosite pentru gestionarea mod
-   *
  
 ## Operatiile folosite in FUSE
 * Crearea unui fisier/director
