@@ -4,7 +4,7 @@
    Acestea fiind spuse, dorim sa implementam eficient functionalitatile de creare, modificare si stergere a fisiereleor si directoarelor ce alacatuiesc un sistem de fisiere din sistemul de operare Linux.
 ## Cum ne propunem sa implementam?🤔
     Sistemul de fisiere bazat pe API-ul FUSE ii permite utilizatorului sa aibe control total asupra structurii de foldere si fisiere. 
-    Astfel, Linux apare ca o interfata cu utilozatorul, fara a avea vreun  efect asupra modului in care user-ul si-a construit ierarhia de directoare.
+    Astfel, Linux apare ca o interfata cu utilozatorul, fara a avea vreun efect asupra modului in care user-ul si-a construit ierarhia de directoare.
     Ne-am gandit sa folosim urmatoarea structura:
 
 * struct file{
