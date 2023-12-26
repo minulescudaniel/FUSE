@@ -17,7 +17,7 @@
 * 	time_t accest;
 * 	time_t mtime;
 *    int size;
-*};   
+## };   
 
 ## struct directory{
 * 	int inode;
@@ -26,12 +26,12 @@
 * 	int uid;
 * 	struct file*list_files[264];
 * 	int number_of_directories_current_folder;
-*      int number_of_files_current_folder;
+*     int number_of_files_current_folder;
 * 	struct directory*list_directories[264];
 * 	mode_t permissions;
 * 	time_t accest;
 * 	time_t mtime;
-* };
+## };
 
   Astfel, putem "simula" ierarhia folderelor si a fisierelor. Operatiile pe care le efectuam asupra structurilor de date , respectiv file si directory , sun descrise in functiile prezente in sursa.c.
 
