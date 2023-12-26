@@ -45,7 +45,7 @@
 
 
  * **Inode.txt**
- * Este utilizat cu scopul de a tine evidenta inode-ului la nivelul sistemului.
+   * Este utilizat cu scopul de a tine evidenta inode-ului la nivelul sistemului.
 
 ## Operatiile folosite in FUSE
 * Crearea unui fisier/director
