@@ -86,3 +86,5 @@ Se pot observa posibilele erori ce pot aparea pe parcursul rularii programului, 
   `https://www.cs.hmc.edu/~geoff/classes/hmc.cs135.201001/homework/fuse/fuse_doc.html`
   `https://libfuse.github.io/doxygen/structfuse__operations.html`
   `https://stackoverflow.com/`
+
+  ![FUSE](https://i.postimg.cc/59RjwV85/fuse-logo.png)
