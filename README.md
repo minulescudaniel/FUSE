@@ -82,6 +82,11 @@
 # IMPORTANT!!!
 Se pot observa posibilele erori ce pot aparea pe parcursul rularii programului, utlizand optiunea "-d", in optiunile montarii.
 
+# SETUP
+* Pentru a putea monta sistemul de fisiere FUSE, este nevoie de existenta directorului *.vscode*, in care se vor regasi 3 fisiere de configurare: _launch.json_, _tasks.json_, _settings.json_.
+* Apoi se va rula din interfata vscode-ului sursa. Utilizatorul trebuie sa deschida un nou terminal in care se va face _cd_ pe MountPoint-ul generat.
+* In final, se vor testa functionalitatile puse la dispozitie puse de sistemul de fisiere. Dupa terminarea sesiunii, utilizatorul trebuie sa inchida terminalul si sa demonteze sistemul de fisiere cu comanda _sudo umount -f MountPoint_
+
 
 # Bibliografie
   `https://www.maastaar.net/fuse/linux/filesystem/c/2019/09/28/writing-less-simple-yet-stupid-filesystem-using-FUSE-in-C/`
