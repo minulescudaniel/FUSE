@@ -1,3 +1,5 @@
+![FUSE](https://i.postimg.cc/59RjwV85/fuse-logo.png)
+
 # FileSystem Based On FUSE API 
 
 ## Scopul proiectului
@@ -87,4 +89,4 @@ Se pot observa posibilele erori ce pot aparea pe parcursul rularii programului, 
   `https://libfuse.github.io/doxygen/structfuse__operations.html`
   `https://stackoverflow.com/`
 
-  ![FUSE](https://i.postimg.cc/59RjwV85/fuse-logo.png)
+  
