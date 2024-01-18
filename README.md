@@ -56,7 +56,7 @@
      
 ## Functii folosite pentru gestionarea modificarilor datelor utilizate in vederea constituirii persistentei sistemului de fisiere.
 
-* **void update_information(char*searched_path,char*new_path,mode_t permissions,int inode,int size,int nlinks,int gid,int uid,time_t atime,time_t mtime ,char type)**
+* **void update_information(char* searched_path,char* new_path,mode_t permissions,int inode,int size,int nlinks,int gid,int uid,time_t atime,time_t mtime ,char type)**
   * Este utilizata pentru a actualiza datele din fisierele(_Atribute_directoare.txt_ si _Atribute_fisiere.txt_) folosite cu scopul de a crea persistenta datelor sistemului.
   * **char*searched_path**->se foloseste pentru a gesi directoul sau fisierul pe care dorim sa-l actualizam
   * **char*new_path**-> se utilizeaza atunci cand se doreste redenumirea unui director sau a unui fisier
