@@ -84,6 +84,7 @@ Se pot observa posibilele erori ce pot aparea pe parcursul rularii programului, 
 
 # SETUP
 * Pentru a putea monta sistemul de fisiere FUSE, este nevoie de existenta directorului *.vscode*, in care se vor regasi 3 fisiere de configurare: _launch.json_, _tasks.json_, _settings.json_.
+* In folder-ul in care exista proiectul, e necesar sa existe urmatoarele 3 fisiere: _Atribute_fisiere.txt_, _Atribute_directoare.txt_, _Inode.txt_ ( ATENTIE! - TREBUIE SA CONTINA VALOAREA 0! - pentru a atribui inodul 0 directorului ROOT).
 * Apoi se va rula din interfata vscode-ului sursa. Utilizatorul trebuie sa deschida un nou terminal in care se va face _cd_ pe MountPoint-ul generat.
 * In final, se vor testa functionalitatile puse la dispozitie puse de sistemul de fisiere. Dupa terminarea sesiunii, utilizatorul trebuie sa inchida terminalul si sa demonteze sistemul de fisiere cu comanda _sudo umount -f MountPoint_
 
