@@ -42,7 +42,7 @@
 ## Cum s-a realizat persistenata atat a fisierelor si a directoarelor create de utilzator, cat si a modificarilor ulterioare?
 
 * Dupa ce am pus bazele logicii sistemului de fisiere si directoare, impreuna cu functiile necesare, am observat faptul ca datele se pierd o data cu demontarea sistemului de fisiere.
-* Persistenta sistemului se bazeaza pa 3 fisiere text( _Atribute_fisiere.txt_ , _Atribute_directoare.txt_ , _Inode.txt_), si un director (_/home/alex/Desktop/Memory/_).
+* Persistenta sistemului se bazeaza pa 3 fisiere text( _Atribute_fisiere.txt_ , _Atribute_directoare.txt_ , _Inode.txt_), si un director (_/home/[user]/Desktop/Memory/_).
 
 * **Atribute_fisiere.txt si Atribute_directoare.txt**
   * Aceste 2 fisiere au rolul de a retine informatiile despre fisierele si directoarele sistemului.( **Atat pe cele nou create cat si pe cele deja create**)
@@ -51,7 +51,7 @@
 
  * **Inode.txt**
    * Este utilizat cu scopul de a tine evidenta inode-urilor la nivelul sistemului. Atfel, putem obtine unicitatea acestora. Acest lucru este util atunci cand dorim persistenta continutului fisierelor.
-   * De fiecare data cand se scrie un anumit continut intr-un fisier, acesta se salveaza automat intr-un fisier cu calea: **/home/alex/Desktop/Memory/ValoareInode.txt**
+   * De fiecare data cand se scrie un anumit continut intr-un fisier, acesta se salveaza automat intr-un fisier cu calea: **/home/[user]/Desktop/Memory/ValoareInode.txt**
    * **Valoarea pe care o contine este actualizat de fiecare data cand este creat un nou fisier sau director.**
      
 ## Functii folosite pentru gestionarea modificarilor datelor utilizate in vederea constituirii persistentei sistemului de fisiere.
