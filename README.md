@@ -35,7 +35,7 @@
 * 	time_t mtime;
 ## };
 
-   Astfel, putem "simula" ierarhia folderelor si a fisierelor. Operatiile pe care le efectuam asupra structurilor de date , respectiv file si directory , sunt descrise in functiile prezente in sursa.c.
+   Astfel, putem "simula" ierarhia folderelor si a fisierelor. Operatiile pe care le efectuam asupra structurilor de date, respectiv file si directory, sunt descrise in functiile prezente in sursa.c.
 
 ## Cum s-a realizat persistenata atat a fisierelor si a directoarelor create de utilzator, cat si a modificarilor ulterioare?
 
@@ -59,8 +59,8 @@
   * **char*searched_path**->se foloseste pentru a gesi directoul sau fisierul pe care dorim sa-l actualizam
   * **char*new_path**-> se utilizeaza atunci cand se doreste redenumirea unui director sau a unui fisier
   * etc.
-  * **char*type** -> poate fi f sau d si determina directorul in care se vor scrie noile modificari (_Atribute_fisiere.txt_ sau _Atribute_directoare.txt_ ). Astfel, aceasta capata un caracter _polimorfic_.
-  * Ca si principiu de functionare , se sterge continutul fisierului modificat si sunt introduse datele actualizate( un rol important il are functia **char*create_buffer_information(char*path,mode_t mode,int inode,int size,int nlinks,int gid,int uid,time_t atime,time_t mtime,char type)**, ce are ca scop crearea unui buffer cu informatiile despre un fisier sau director.
+  * **char*type** -> poate fi f sau d si determina directorul in care se vor scrie noile modificari (_Atribute_fisiere.txt_ sau _Atribute_directoare.txt_ ). Astfel, aceasta functie capata un caracter _polimorfic_.
+  * Ca si principiu de functionare, se sterge continutul fisierului modificat si sunt introduse datele actualizate( un rol important il are functia **char*create_buffer_information(char*path,mode_t mode,int inode,int size,int nlinks,int gid,int uid,time_t atime,time_t mtime,char type)**, ce are ca scop crearea unui buffer cu informatiile despre un fisier sau director.
 
 * **void reconstruct()**
   * Aceasta functie sta la baza persistentei sistemului de fisiere. Este apelata la montarea sistemului de fisiere, in functia *do_init()*.
